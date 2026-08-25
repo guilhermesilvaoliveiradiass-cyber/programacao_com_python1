@@ -1,6 +1,6 @@
-nome = str(input('Digite seu nome:'))
-idade = int(input('Agora digite sua idade:'))
-cidade = str(input('Digite o nome da sua cidade:'))
-print('Olá ',nome)
-print('Você tem ',idade)
-print('Você mora em', cidade)
+import re
+codigo = input('digite um codigo: ')
+if re.fullmatch(r"\d{4}",codigo):
+    print("Código válido")
+else:
+    print('Código inválido')
